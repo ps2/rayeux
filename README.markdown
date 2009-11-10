@@ -1,8 +1,8 @@
-= rayeux
+# Rayeux: A ruby client to communicate with a comet server using Bayeux.
 
-Description goes here.
+Provides client side functionality to talk to a Bayeux server such as the cometd server in Jetty.
 
-== Note on Patches/Pull Requests
+## Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -13,6 +13,6 @@ Description goes here.
    bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-== Copyright
+## Copyright
 
-Copyright (c) 2009 ps2. See LICENSE for details.
+Copyright (c) 2009 Pete Schwamb. See LICENSE for details.

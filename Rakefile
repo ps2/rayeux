@@ -5,11 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rayeux"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Ruby based Bayeux (comet) client implementation.}
+    gem.description = %Q{Provides client side functionality to talk to a Bayeux server such as the cometd server in Jetty.}
     gem.email = "pete@schwamb.net"
     gem.homepage = "http://github.com/ps2/rayeux"
-    gem.authors = ["ps2"]
+    gem.authors = ["Pete Schwamb"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
