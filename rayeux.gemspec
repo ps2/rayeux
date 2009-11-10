@@ -14,16 +14,17 @@ Gem::Specification.new do |s|
   s.email = %q{pete@schwamb.net}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+     "README.markdown"
   ]
   s.files = [
     ".document",
      ".gitignore",
      "LICENSE",
-     "README.rdoc",
+     "README.markdown",
      "Rakefile",
      "VERSION",
      "lib/rayeux.rb",
+     "rayeux.gemspec",
      "test/helper.rb",
      "test/test_rayeux.rb"
   ]
