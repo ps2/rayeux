@@ -308,7 +308,7 @@ module Rayeux
     end
 
     # Removes all subscriptions added via {@link #subscribe(channel, scope, callback, subscribeProps)},
-    # but does not remove the listeners added via {@link addListener(channel, scope, callback)}.
+    # but does not remove the listeners added via {@link add_listener(channel, scope, callback)}.
     def clear_subscriptions
       internal_clear_subscriptions
     end
@@ -316,7 +316,7 @@ module Rayeux
     def clear_subscriptions
       @listeners.each do |channel,subscriptions|
         debug('rm subscriptions', channel, subscriptions)
-        subscriptions.clear
+        subscriptions.delete_if {|s| s[:subscription]}
       end
     end
 
