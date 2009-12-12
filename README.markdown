@@ -4,7 +4,11 @@ Provides client side functionality to talk to a Bayeux server such as the cometd
 
 Rayeux is heavily based on the javascript cometd library available here: http://cometdproject.dojotoolkit.org/
 
-See the chat_example.rb file for an example client that will utilize the chat demo included with Jetty (http://www.mortbay.org/jetty/)
+See the chat_example.rb file for an example client that will talk to the chat demo included with Jetty (http://www.mortbay.org/jetty/)
+
+## Dependencies
+
+* httpclient - http://github.com/nahi/httpclient
 
 ## Todo
  
