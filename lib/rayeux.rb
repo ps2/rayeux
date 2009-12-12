@@ -12,7 +12,6 @@ module Rayeux
       @type = type
       @envelopes = []
       @http = http_client
-      @max_connections = 5
       start_threads
     end
 
@@ -109,9 +108,8 @@ module Rayeux
   end
 
   class Client
-    def initialize(http_client, configuration, name = nil, handshake_props = nil)
+    def initialize(configuration, name = nil, handshake_props = nil)
       @message_id = 0
-      @http = http_client
       @name = name || 'default'
       @log_level = 'warn' # 'warn','info','debug'
       @status = 'disconnected'
@@ -245,7 +243,7 @@ module Rayeux
     # @param channel the channel to publish the message to
     # @param content the content of the message
     # @param publishProps an object to be merged with the publish message
-    def publish(channel, content, publishProps)
+    def publish(channel, content, publish_props = {})
       bayeux_message = {
           :channel => channel,
           :data    => content
@@ -480,8 +478,9 @@ module Rayeux
       if @url.nil?
         raise "Missing required configuration parameter 'url' specifying the comet server URL"
       end
-    
-      @max_connections = configuration[:max_connections] || 2
+  
+      @http = configuration[:http_client] || HTTPClient.new
+        
       @backoff_increment = configuration[:backoff_increment] || 1000
       @max_backoff = configuration[:max_backoff] || 60000
       @log_level = configuration[:log_level] || 'info'
