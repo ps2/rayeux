@@ -10,7 +10,7 @@ begin
     gem.email = "pete@schwamb.net"
     gem.homepage = "http://github.com/ps2/rayeux"
     gem.authors = ["Pete Schwamb"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "httpclient", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
