@@ -780,7 +780,7 @@ module Rayeux
         # and the server will hold the request, so when a response returns
         # we immediately call the server again (long polling)
         case action
-          when 'retry':
+          when 'retry'
             reset_backoff
             delayed_connect
           else
@@ -805,7 +805,7 @@ module Rayeux
             end_batch(false)
             reset_backoff
             delayed_handshake
-          when 'none':
+          when 'none'
             reset_backoff
             set_status('disconnected')
         end
