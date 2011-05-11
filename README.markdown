@@ -1,3 +1,4 @@
+# This project is no longer supported.  See https://github.com/jcoglan/faye for a suitable replacement.
 # Rayeux: A ruby client to communicate with a comet server using Bayeux.
 
 Provides client side functionality to talk to a Bayeux server such as the cometd server in Jetty.
