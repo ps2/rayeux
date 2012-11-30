@@ -15,7 +15,7 @@ Rayeux is heavily based on the javascript cometd library available here: http://
 * httpclient - http://github.com/nahi/httpclient
 
 ## Todo
- 
+
 * Support ack extension
 * Port to eventmachine-httpclient for a cleaner event driven model
 
